@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Proposal 💘</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #e91e63;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 18px;
+      margin: 15px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: #e91e63;
+      color: white;
+    }
+
+    .no {
+      background: #ccc;
+      color: #555;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Nancika 💖</h1>
+    <h2>Will you be my Valentine? 💘</h2>
+
+    <button class="yes" onclick="yesClick()">Yes 😍</button>
+    <button class="no" onmouseover="moveNo()">No 🙈</button>
+  </div>
+
+  <script>
+    function yesClick() {
+      alert("Yayyy! 💕 I knew it! Happy Valentine’s Day, Nancika 😘");
+    }
+
+    function moveNo() {
+      const noBtn = document.querySelector('.no');
+      noBtn.style.top = Math.random() * window.innerHeight + "px";
+      noBtn.style.left = Math.random() * window.innerWidth + "px";
+    }
+  </script>
+
+</body>
+</html>
